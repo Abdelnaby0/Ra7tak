@@ -148,14 +148,14 @@ body{
 .trans-right{
   animation-name: transf-right;
   animation-iteration-count: 1;
-  animation-duration: 1s;
+  animation-duration: 1.3s;
   animation-timing-function: ease-out;
   opacity: 1 !important;
 }
 .trans-left{
   animation-name: transf-left;
   animation-iteration-count: 1;
-  animation-duration: 1s;
+  animation-duration: 1.3s;
   animation-timing-function: ease-out;
   opacity: 1 !important;
 }
@@ -173,14 +173,14 @@ body{
 }
 
 @keyframes transf-right {
-  0% {transform: translateX(-100%);
+  0% {transform: translateX(-130%);
   opacity: 0;}
   100% {transform: translateX(0);
     opacity: 1;}
   }
 
 @keyframes transf-left {
-  0% {transform: translateX(100%);
+  0% {transform: translateX(130%);
     opacity: 0;}
   100% {transform: translateX(0);
     opacity: 1;}
