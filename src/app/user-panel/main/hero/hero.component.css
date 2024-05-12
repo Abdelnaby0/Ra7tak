@@ -5,7 +5,13 @@ h1{
   -webkit-background-clip: text  ;
   font-family: mainfont;
   font-size: 90px;
-  
+
+}
+.trans2{
+  opacity: 0;
+}
+.trans{
+  opacity: 0;
 }
 .w-75{
   width: 75% !important;
