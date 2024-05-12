@@ -1,0 +1,58 @@
+<app-navbar></app-navbar>
+<div class="container box py-4 my-4">
+  <div class="col-12">
+    <a routerLink="/partners"
+      ><i class="fa-solid fa-arrow-left ps-2 arrow-icon"></i
+    ></a>
+  </div>
+  <div class="col-lg-2 col-6 m-auto">
+    <div class="m-auto text-center">
+      <img src="{{ partner.img }}" class="img-fluid" alt="..." />
+      <div class="caption">
+        <h4 class="text-center pt-3">{{ partner.name }}</h4>
+        <p class="text-center">{{ partner.category }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-evenly align-items-center border-bot">
+    <h6>{{ partner.name }} delivers to you</h6>
+    <p>
+      {{ partner.description }}
+    </p>
+  </div>
+  <div class="row pt-3">
+    <div class="col-12 pb-2 text-center"><h3>Menu</h3></div>
+    <div *ngFor="let item of menu" class="col-lg-3 col-sm-6">
+      <div class="card">
+        <img src="{{ item.image }}" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">{{ item.recipe }}</p>
+          <div
+            class="toolbtn m-auto"
+            style="background-color: var(--maincolor)"
+          >
+            <div class="toolbtn-wrapper">
+              <div class="text">Add To Cart | {{ item.price }}</div>
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

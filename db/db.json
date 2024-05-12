@@ -1,0 +1,325 @@
+{
+  "partners": [
+    {
+      "name": "Papa Johns",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/papa johns.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 1
+    },
+    {
+      "name": "Baskin Robbins",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/baskin.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 2
+    },
+    {
+      "name": "Abu Auf",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/Abu-Auf.webp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 3
+    },
+    {
+      "name": "Dominos Pizza",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/dominos.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 4
+    },
+    {
+      "name": "Burger King",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/burgerking.webp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 5
+    },
+    {
+      "name": "Oxygen Pharmacy",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/oxygen.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 6
+    },
+    {
+      "name": "Buffalo Burger",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/burger n bun.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 7
+    },
+    {
+      "name": "Carrefour",
+      "category": "Lorem ipsum dolor sit.",
+      "img": "assets/images/carrefour-2.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet velit ex? Delectus at cumque aut fugiat autem nulla, ratione saepe nobis perspiciatis hic vitae ea quod suscipit earum enim? Eum delectus ad ex mollitia quisquam necessitatibus, doloribus earum. Repellat rem quo quos facilis sint officia qui delectus, impedit cum optio architecto eum quod aperiam vero eligendi ipsum dolorem. Debitis.",
+      "id": 8
+    }
+  ],
+  "menu": [
+    {
+      "id": 1,
+      "name": "Pepperoni Pizza",
+      "recipe": "Pepperoni and mozzarella cheese",
+      "image": "assets/images/pizza1.jpg",
+      "price": "20$",
+      "partnerId": "1"
+    },
+    {
+      "id": 2,
+      "name": "Margherita Pizza",
+      "recipe": "Mozzarella cheese and pizza sauce",
+      "image": "assets/images/pizza2.webp",
+      "price": "15$",
+      "partnerId": "1"
+    },
+    {
+      "id": 3,
+      "name": "Chicken Super Papa`s Pizza",
+      "recipe": "Chicken Super Papa`s Pizza",
+      "image": "assets/images/pizza3.jpg",
+      "price": "10$",
+      "partnerId": "1"
+    },
+    {
+      "id": 4,
+      "name": "Smoky Cheese Pizza",
+      "recipe": "Smoky Cheese Pizza",
+      "image": "assets/images/pizza4.jpg",
+      "price": "40$",
+      "partnerId": "1"
+    },
+    {
+      "id": 5,
+      "name": "Blue's Boardwalk Bash",
+      "recipe": "Blue raspberry flavored ice cream with OREO® ",
+      "image": "assets/images/baskin1.jpg",
+      "price": "12$",
+      "partnerId": "2"
+    },
+    {
+      "id": 6,
+      "name": "Blossom's Berry Twirl",
+      "recipe": "Strawberry & sweet cream ice creams with rainbow sprinkles",
+      "image": "assets/images/baskin2.jpg",
+      "price": "5$",
+      "partnerId": "2"
+    },
+    {
+      "id": 7,
+      "name": "Vanilla",
+      "recipe": "Classic vanilla ice cream made with fresh cream & real vanilla.",
+      "image": "assets/images/baskin3.jpg",
+      "price": "12$",
+      "partnerId": "2"
+    },
+    {
+      "id": 8,
+      "name": "Non-Dairy Mint Chocochunk",
+      "recipe": "Sweet & smooth mint flavored frozen dessert with chocolate",
+      "image": "assets/images/baskin4.jpg",
+      "price": "8$",
+      "partnerId": "2"
+    },
+    {
+      "id": 9,
+      "name": "Columbian Espresso Coffee",
+      "recipe": "250 gm",
+      "image": "assets/images/Abu-Auf1.jpg",
+      "price": "8$",
+      "partnerId": "3"
+    },
+    {
+      "id": 10,
+      "name": "Ground Espresso Coffee",
+      "recipe": "250 gm",
+      "image": "assets/images/Abu-Auf2.jpg",
+      "price": "12$",
+      "partnerId": "3"
+    },
+    {
+      "id": 11,
+      "name": "Filtered American Coffee",
+      "recipe": "250 gm",
+      "image": "assets/images/Abu-Auf3.jpg",
+      "price": "8$",
+      "partnerId": "3"
+    },
+    {
+      "id": 12,
+      "name": "Coffee with Chocolate Flavor",
+      "recipe": "250 gm",
+      "image": "assets/images/Abu-Auf4.jpg",
+      "price": "15$",
+      "partnerId": "3"
+    },
+    {
+      "id": 13,
+      "name": "Hot And Spicy Pizza",
+      "recipe": "Beef, onions, black olives and jalapeno pepper.",
+      "image": "assets/images/dominos2.jpg",
+      "price": "10$",
+      "partnerId": "4"
+    },
+    {
+      "id": 14,
+      "name": "Pepperoni Pizza",
+      "recipe": "Beef pepperoni, mozzarella cheese and domino's sauce",
+      "image": "assets/images/dominos1.jpg",
+      "price": "12$",
+      "partnerId": "4"
+    },
+    {
+      "id": 15,
+      "name": "BBQ Chicken Pizza",
+      "recipe": "Seasoned chicken, onions and BBQ sauce",
+      "image": "assets/images/dominos3.jpg",
+      "price": "15$",
+      "partnerId": "4"
+    },
+    {
+      "id": 16,
+      "name": "Deluxe Pizza",
+      "recipe": "Beef pepperoni, Italian sausage, green pepper, onion and mushroom",
+      "image": "assets/images/dominos4.jpg",
+      "price": "20$",
+      "partnerId": "4"
+    },
+    {
+      "id": 17,
+      "name": "Spicy Royal Crispy Chicken",
+      "recipe": "Spicy Royal Medium Meal with mayonnaise, lettuce, tomatoes melted cheese sauce in toasted potato bread",
+      "image": "assets/images/burgerking1.png",
+      "price": "12$",
+      "partnerId": "5"
+    },
+    {
+      "id": 18,
+      "name": "Texas Double Whopper",
+      "recipe": "Beef whopper patty topped with patty mozzarella cheese with mayonnaise, lettuce, tomatoes.",
+      "image": "assets/images/burgerking2.png",
+      "price": "5$",
+      "partnerId": "5"
+    },
+    {
+      "id": 19,
+      "name": "Bacon Swiss Royal Crispy Chicken",
+      "recipe": "Chicken Crunchy patty topped with patty mozzarella .",
+      "image": "assets/images/burgerking3.png",
+      "price": "12$",
+      "partnerId": "5"
+    },
+    {
+      "id": 20,
+      "name": "Whopper with Cheese",
+      "recipe": "Crunchy patty topped with a patty of mozzarella cheese with mayonnaise, lettuce, tomatoes melted cheese sauce in toasted potato bread.",
+      "image": "assets/images/burgerking4.png",
+      "price": "15$",
+      "partnerId": "5"
+    },
+    {
+      "id": 21,
+      "name": "Dermactive White Foaming Cleansing",
+      "recipe": "200ml",
+      "image": "assets/images/oxygen1.webp",
+      "price": "15$",
+      "partnerId": "6"
+    },
+    {
+      "id": 22,
+      "name": "L'oreal Infaillible 24H Fresh Wear Foundation In Powder",
+      "recipe": "020 Ivory",
+      "image": "assets/images/oxygen2.webp",
+      "price": "15$",
+      "partnerId": "6"
+    },
+    {
+      "id": 23,
+      "name": "Dr Rashel Black charcoal Soap",
+      "recipe": "Dr Rashel Black charcoal Soap, 100g is sold on Ra7tak by Oxygen Pharmacy",
+      "image": "assets/images/oxygen3.webp",
+      "price": "15$",
+      "partnerId": "6"
+    },
+    {
+      "id": 24,
+      "name": "Brufen 600mg Ibuprofen for Reducing Fever, Relieving Pain & Treating Inflammations 30 tablets",
+      "recipe": "Brufen 600mg Ibuprofen for Reducing Fever, Relieving Pain & Treating Inflammations 30 tablets ",
+      "image": "assets/images/oxygen4.webp",
+      "price": "15$",
+      "partnerId": "6"
+    },
+    {
+      "id": 25,
+      "name": "Cholo's Chicken",
+      "recipe": "Chicken Strips With Pickled Sliced Jalapeños, Buffalo Sauce, And Melted Cheddar Cheese. ",
+      "image": "assets/images/buffalo1.webp",
+      "price": "15$",
+      "partnerId": "7"
+    },
+    {
+      "id": 26,
+      "name": "The Secret Burger",
+      "recipe": "Flamed burger patty with crispy onion and BBQ sauce with caramelized onion, topped with crispy secret cheese.",
+      "image": "assets/images/buffalo2.webp",
+      "price": "15$",
+      "partnerId": "7"
+    },
+    {
+      "id": 27,
+      "name": "Shiitake Mushroom",
+      "recipe": "Sautéed mushroom, cheddar cheese, and creamy mayonnaise spread on top of our pure beef burger patty.",
+      "image": "assets/images/buffalo3.webp",
+      "price": "15$",
+      "partnerId": "7"
+    },
+    {
+      "id": 28,
+      "name": "Blue Cheese",
+      "recipe": "Crumbles of creamy French blue cheese top our famous burger patty with our signature mayonnaise sauce.",
+      "image": "assets/images/buffalo4.webp",
+      "price": "15$",
+      "partnerId": "7"
+    },
+    {
+      "id": 29,
+      "name": "MyChoice Blender - 1400 Watt - Black - GCHB-23008 MyChoice Blender - 1400 Watt - Black - GCHB-23008",
+      "recipe": "Electric Blender Delivered by Ra7tak",
+      "image": "assets/images/carrefour1.avif",
+      "price": "15$",
+      "partnerId": "8"
+    },
+    {
+      "id": 30,
+      "name": "First Teflon Non Sticky Cooking Pot 20cm - Burgundy",
+      "recipe": "Amazing Burgundy Cooking Pot Delivered by Ra7tak",
+      "image": "assets/images/carrefour2.avif",
+      "price": "15$",
+      "partnerId": "8"
+    },
+    {
+      "id": 31,
+      "name": "Natures Wonders Pretzel with Salt - 200 gm",
+      "recipe": "At home or on the go, savor the natural taste of your perfect daily snack.",
+      "image": "assets/images/carrefour3.avif",
+      "price": "15$",
+      "partnerId": "8"
+    },
+    {
+      "id": 32,
+      "name": "Natures Wonders White Quinoa - 400 gram",
+      "recipe": "Healthy breakfast cereal is a perfect pick for weight loss, Easy-to-make food",
+      "image": "assets/images/carrefour4.avif",
+      "price": "15$",
+      "partnerId": "8"
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "admin.abdelnaby"
+    }
+  ]
+}

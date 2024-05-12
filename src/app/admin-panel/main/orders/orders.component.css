@@ -1,0 +1,27 @@
+.vert-bg{
+  font-size: 28px;
+  background-color: var(--fadmincolor);
+  border-radius: 50%;
+  padding: 15px 25px;
+}
+.bg-bord{
+  background-color: white;
+  border-radius: 30px;
+}
+.time-font{
+  font-size: 40px;
+  font-family: fadminfont;
+}
+.bggg{
+  background-image:url(../../../../assets/images/stripped-bback.avif);
+  background-size: 100% ;
+  padding: 5px 0px;
+
+}
+.a-hover{
+  transition: all 0.5s;
+  &:hover{
+    background-color: var(--fadmincolor);
+    border-radius: 30px;
+  }
+}

@@ -1,1 +1,199 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+:root{
+  --maincolor:#6C5FBC;
+  --secondcolor:#7B6FC3;
+  --thirdcolor:#F5F5F5;
+  --fourthcolor:#C5BFF3;
+  --fifthcolor:#323142;
+  --fadmincolor:#F5F6FE;
+}
+@font-face {
+  font-family: mainfont;
+  src: url(./assets/vendors/fonts/Burchelli.otf);
+}
+@font-face {
+  font-family: secfont;
+  src: url(./assets/vendors/fonts/GaluihScript.otf)
+}
+@font-face {
+  font-family: thirdfont;
+  src: url(./assets/vendors/fonts/BadgerValley-Regular.ttf)
+}
+@font-face {
+  font-family:fadminfont;
+  src: url(./assets/vendors/fonts/Megadroid.otf)
+}
+.pb-6{
+  padding-bottom: 100px ;
+}
+.mybtn {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background-color: var(--maincolor);
+  color: white;
+  }
+
+  .mybtn::before,
+  .mybtn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+  }
+
+  .mybtn::before {
+  left: -10px;
+  background: var(--fourthcolor);
+  }
+
+  .mybtn::after {
+  right: -10px;
+  background: var(--fourthcolor);
+  }
+
+  .mybtn:hover::before,
+  .mybtn:hover::after {
+  width: 58%;
+  }
+
+ .mybtn:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+
+ .mybtn span {
+  color: #03045e;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+ }
+ .mybtn:hover{
+  color: var(--maincolor);
+ }
+.mybtn2{
+  padding: 10px 20px;
+  border: 1px solid var(--fourthcolor);
+  background-color: var(--maincolor);
+  color: white;
+  border-radius: 10px;
+  transition: all  .3s ease;
+  &:hover{
+    background-color: var(--fourthcolor);
+    color: var(--fifthcolor);
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+  border-radius: 15px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--fourthcolor);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondcolor);
+}
+::-webkit-scrollbar-track-piece{
+  border-radius: 15px;
+}
+::-webkit-scrollbar-corner{
+  background: transparent;
+
+}
+.box {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  background: white;
+  border-radius: 5px;
+}
+
+.trans-right{
+  animation-name: transf-right;
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+.trans-left{
+  animation-name: transf-left;
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+.trans-top{
+  animation-name: transf-top;
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+.trans-rotate{
+  animation-name: rotate;
+  animation-iteration-count: 1;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes transf-right {
+  0% {transform: translateX(-100%)}
+  100% {transform: translateX(0)}
+}
+@keyframes transf-left {
+  0% {transform: translateX(100%)}
+  100% {transform: translateX(0)}
+}
+@keyframes transf-top {
+  0% {transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    transform: rotateY(30deg);
+
+  }
+
+  100% {transform: translateY(0);
+    transform: rotateY(0deg);
+
+    opacity: 1;
+  }
+}

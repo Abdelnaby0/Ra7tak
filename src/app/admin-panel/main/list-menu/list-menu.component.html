@@ -1,0 +1,55 @@
+<admin-navbar></admin-navbar>
+<div class="container box py-4 my-4">
+  <div class="col-12">
+    <a routerLink="/admin/listPartners"
+      ><i class="fa-solid fa-arrow-left ps-2 arrow-icon"></i
+    ></a>
+  </div>
+  <div class="col-lg-2 col-6 m-auto">
+    <div class="m-auto">
+      <img src="{{ partners.img }}" class="w-100 m-auto" alt="..." />
+      <div class="caption">
+        <h4 class="text-center pt-3">{{ partners.name }}</h4>
+        <p class="text-center">{{ partners.category }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-evenly align-items-center border-bot">
+    <h6>{{ partners.name }}'s delivers to you</h6>
+    <p>
+      {{ partners.description }}
+    </p>
+  </div>
+  <div class="row pt-3">
+    <div class="col-12 pb-2 text-center"><h3>Menu</h3></div>
+    <div *ngFor="let item of products" class="col-lg-3 col-sm-6">
+      <div class="card">
+        <img src="{{ item.image }}" class="card-img-top" alt="..." />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">{{ item.recipe }}</p>
+          <div class="row justify-content-center pb-2">
+            <div class="col-3">
+              <button
+                routerLink="/admin/editProduct/{{ item.id }}"
+                class="btn btn-warning"
+              >
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </div>
+            <div class="col-3">
+              <button class="btn btn-danger" (click)="deleteProduct(item.id)">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-10 text-center m-auto pt-5">
+      <button type="button" routerLink="/admin/addProduct" class="mybtn">
+        Add New Product
+      </button>
+    </div>
+  </div>
+</div>

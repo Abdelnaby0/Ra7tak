@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container box py-4 my-4">
+  <h1 class="py-4 text-center trans-rotate">Our Partners</h1>
+  <div class="row pt-5 justify-content-evenly align-items-center">
+    <div
+      *ngFor="let item of partner"
+      class="col-lg-3 col-md-4 col-sm-6 pb-5 trans-rotate"
+    >
+      <a routerLink="/product/{{ item.id }}" class="text-decoration-none">
+        <div class="card m-auto trans" style="width: 14rem">
+          <img src="{{ item.img }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h4 class="text-center">{{ item.name }}</h4>
+            <p class="card-text text-center">{{ item.category }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

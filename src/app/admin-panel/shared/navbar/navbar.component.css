@@ -1,0 +1,33 @@
+.container-fluid{
+  justify-content: start;
+}
+.form-control{
+  background-color:#F0F4FC ;
+}
+.bell-icon{
+  color: #8880FE;
+}
+.user-icon{
+  color: #FE7474;
+}
+.nav-link{
+  color: black;
+}
+.nav-link:focus, .nav-link:hover{
+  color: black;
+}
+.drop-bg{
+  background-color: var(--fadmincolor);
+  color: black;
+}
+.text-color{
+  color: black;
+  padding: 10px;
+}
+.p-color{
+  color: black;
+
+}
+.dropdown-item{
+  padding: 10px 30px;
+}

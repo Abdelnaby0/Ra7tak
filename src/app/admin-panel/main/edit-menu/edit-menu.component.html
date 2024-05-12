@@ -1,0 +1,130 @@
+<admin-navbar></admin-navbar>
+<div class="container box py-4 my-4">
+  <div class="col-12">
+    <a routerLink="/admin/listPartners"
+      ><i class="fa-solid fa-arrow-left ps-2 arrow-icon"></i
+    ></a>
+  </div>
+  <h1 class="py-4 text-center">Edit Product</h1>
+  <!-- Form -->
+  <form class="text-center">
+    <div class="error col-12" *ngIf="message">
+      <div class="error__icon">
+        <i class="fa-solid fa-warning text-light"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          viewBox="0 0 24 24"
+          height="24"
+          fill="none"
+        ></svg>
+      </div>
+      <div class="error__title">Data Edited Successfully!</div>
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Partner Name</label>
+      <input
+        disabled
+        name="partnername"
+        #partnername="ngModel"
+        [(ngModel)]="partner.name"
+        id="partnername"
+        class="form-control"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnername.touched && partnername.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Product Name</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="name"
+        #productname="ngModel"
+        [(ngModel)]="product.name"
+      />
+      <span
+        class="text-danger"
+        *ngIf="productname.touched && productname.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Price</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="price"
+        #productprice="ngModel"
+        [(ngModel)]="product.price"
+      />
+      <span
+        class="text-danger"
+        *ngIf="productprice.touched && productprice.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Recipe</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="description"
+        #productrecipe="ngModel"
+        [(ngModel)]="product.recipe"
+      />
+      <span
+        class="text-danger"
+        *ngIf="productrecipe.touched && productrecipe.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Image</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="image"
+        #productimage="ngModel"
+        [(ngModel)]="product.image"
+      />
+      <span
+        class="text-danger"
+        *ngIf="productimage.touched && productimage.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div
+      class="col-10 m-auto text-center"
+      *ngIf="
+        productname.valid &&
+          productprice.valid &&
+          productimage.valid &&
+          productrecipe.valid;
+        then validForm;
+        else invalidForm
+      "
+    >
+      <button type="submit" class="btn btn-warning col-3" (click)="update()">
+        Update
+      </button>
+    </div>
+  </form>
+</div>
+<ng-template #validForm>
+  <button type="submit" class="btn btn-warning col-3" (click)="update()">
+    Update
+  </button>
+</ng-template>
+<ng-template #invalidForm>
+  <button class="btn btn-primary col-md-3" disabled>
+    Please fill out all fields first
+  </button>
+</ng-template>

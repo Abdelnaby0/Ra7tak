@@ -1,0 +1,98 @@
+<admin-navbar></admin-navbar>
+<div class="container box py-4 my-4">
+  <h1 class="py-4 text-center">Edit Admin</h1>
+  <!-- Form -->
+  <form class="text-center">
+    <div class="error col-12" *ngIf="message">
+      <div class="error__icon">
+        <i class="fa-solid fa-warning text-light"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          viewBox="0 0 24 24"
+          height="24"
+          fill="none"
+        ></svg>
+      </div>
+      <div class="error__title">Data Edited Successfully!</div>
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="name"
+        #adminname="ngModel"
+        [(ngModel)]="admin.name"
+      />
+      <span class="text-danger" *ngIf="adminname.touched && adminname.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="email"
+        #adminemail="ngModel"
+        [(ngModel)]="admin.email"
+      />
+      <span class="text-danger" *ngIf="adminemail.touched && adminemail.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="mb-3 text-start">
+      <label class="form-label">New Password</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="password"
+        #adminpassword="ngModel"
+        [(ngModel)]="admin.password"
+      />
+      <span
+        class="text-danger"
+        *ngIf="adminpassword.touched && adminpassword.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <!-- <div class="mb-3 text-start">
+      <label class="form-label">New Password</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="image"
+        #partnerimage="ngModel"
+        [(ngModel)]="admin.img"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnerimage.touched && partnerimage.invalid"
+        >*this field is required</span
+      >
+    </div> -->
+    <div
+      class="col-10"
+      *ngIf="
+        adminname.valid && adminemail.valid && adminpassword.valid;
+        then validForm;
+        else invalidForm
+      "
+    ></div>
+  </form>
+</div>
+<ng-template #validForm>
+  <button type="submit" class="btn btn-warning col-3" (click)="update()">
+    Update
+  </button>
+</ng-template>
+<ng-template #invalidForm>
+  <button class="btn btn-primary col-md-3" disabled>
+    Please fill out all fields first
+  </button>
+</ng-template>

@@ -1,0 +1,42 @@
+<admin-navbar></admin-navbar>
+<div class="container box py-4 my-4">
+  <h1 class="py-4 text-center">Our Partners</h1>
+  <div class="row pt-5 justify-content-evenly align-items-center">
+    <div *ngFor="let item of partners" class="col-lg-3 col-md-4 col-sm-6 pb-4">
+      <div class="card m-auto trans" style="width: 14rem">
+        <a
+          routerLink="/admin/listMenu/{{ item.id }}"
+          class="text-decoration-none"
+        >
+          <img src="{{ item.img }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h4 class="text-center">{{ item.name }}</h4>
+            <p class="card-text text-center" style="color: black">
+              {{ item.category }}
+            </p>
+          </div>
+        </a>
+        <div class="row justify-content-center pb-2">
+          <div class="col-3">
+            <button
+              routerLink="/admin/editPartner/{{ item.id }}"
+              class="btn btn-warning"
+            >
+              <i class="fa-solid fa-pen"></i>
+            </button>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-danger" (click)="delete(item.id)">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-10 text-center m-auto pt-5">
+    <button type="button" routerLink="/admin/addPartner" class="mybtn">
+      Add New partner
+    </button>
+  </div>
+</div>

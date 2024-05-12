@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/admin/dashboard"> Ra7tak </a>
+      </div>
+    </nav>
+    <div class="ms-auto">
+      <button
+        class="navbar-toggler text-end"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2 nav-link"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </ul>
+
+      <div class="nav-item dropdown pe-4 row">
+        <div class="col-2 text-center dropdown">
+          <a
+            class="nav-link nav-icon"
+            href="#"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+          >
+            <i class="fa-solid fa-bell bell-icon"></i>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications drop-bg"
+            style="
+              position: absolute;
+              inset: 0px 0px auto auto;
+              margin: 0px;
+              transform: translate3d(-24.8px, 35.2px, 0px);
+            "
+            data-popper-placement="bottom-end"
+          >
+            <li class="dropdown-header">
+              You have 3 new notifications
+              <a href="#"
+                ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                  >View all</span
+                ></a
+              >
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div class="text-color">
+                <h4>Lorem Ipsum</h4>
+                <p class="p-color">Quae dolorem earum veritatis oditseno</p>
+                <p class="p-color">30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div class="text-color">
+                <h4>Atque rerum nesciunt</h4>
+                <p class="p-color">Quae dolorem earum veritatis oditseno</p>
+                <p class="p-color">1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div class="text-color">
+                <h4>Sit rerum fuga</h4>
+                <p class="p-color">Quae dolorem earum veritatis oditseno</p>
+                <p class="p-color">2 hrs. ago</p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="dropdown-footer text-center">
+              <a href="#" class="text-decoration-none"
+                >Show all notifications</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <a href="/admin/editAdmin/{{ admin.id }}">
+            <i class="fa-solid fa-user user-icon"></i>
+          </a>
+        </div>
+        <div class="col-8">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mahmoud Abdelnaby
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <div class="text-center pt-2">
+                <h6>Mahmoud Abdelnaby</h6>
+                <p style="font-size: 14px">Web Developer</p>
+              </div>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#"
+                ><i class="fa-solid fa-gear pe-1"></i>Account Settings</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="/faq">
+                <i class="fa-solid fa-circle-question pe-1"></i>Need Help?</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" (click)="signOut()" href="#">
+                <i class="fa-solid fa-reply pe-1"></i>Sign Out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,108 @@
+<admin-navbar></admin-navbar>
+<div class="container box py-4 my-4">
+  <div class="col-12">
+    <a routerLink="/admin/listPartners"
+      ><i class="fa-solid fa-arrow-left ps-2 arrow-icon"></i
+    ></a>
+  </div>
+  <h1 class="py-4 text-center">Add New Partner</h1>
+  <!-- Form -->
+  <form class="text-center">
+    <div class="error col-12" *ngIf="message">
+      <div class="error__icon">
+        <i class="fa-solid fa-circle-check text-light"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          viewBox="0 0 24 24"
+          height="24"
+          fill="none"
+        ></svg>
+      </div>
+      <div class="error__title">Data Added Successfully!</div>
+    </div>
+    <div class="form-group mb-3 text-start">
+      <label class="form-label">Brand Name</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="name"
+        #partnername="ngModel"
+        [(ngModel)]="partner.name"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnername.touched && partnername.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="form-group mb-3 text-start">
+      <label class="form-label">Description</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="description"
+        #partnerdescription="ngModel"
+        [(ngModel)]="partner.description"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnerdescription.touched && partnerdescription.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="form-group mb-3 text-start">
+      <label class="form-label">Category</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="category"
+        #partnercategory="ngModel"
+        [(ngModel)]="partner.category"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnercategory.touched && partnercategory.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div class="form-group mb-3 text-start">
+      <label class="form-label">Image</label>
+      <input
+        type="text"
+        class="form-control"
+        required
+        name="image"
+        #partnerimage="ngModel"
+        [(ngModel)]="partner.img"
+      />
+      <span
+        class="text-danger"
+        *ngIf="partnerimage.touched && partnerimage.invalid"
+        >*this field is required</span
+      >
+    </div>
+    <div
+      class="form-group col-10"
+      *ngIf="
+        partnername.valid &&
+          partnerdescription.valid &&
+          partnercategory.valid &&
+          partnerimage.valid;
+        then validForm;
+        else invalidForm
+      "
+    ></div>
+  </form>
+</div>
+<ng-template #validForm>
+  <button class="mybtn2 col-3" (click)="submit()">Submit</button>
+</ng-template>
+<ng-template #invalidForm>
+  <button class="btn btn-primary col-md-3" disabled>
+    Please fill out all fields first
+  </button>
+</ng-template>

@@ -1,0 +1,155 @@
+h6{
+  color: var(--secondcolor);
+  font-family: thirdfont;
+
+}
+h3{
+  font-size: 30px;
+  color: var(--secondcolor);
+  font-family: mainfont;
+}
+h5{
+  color: var(--secondcolor);
+}
+.border-bot{
+  border-bottom: 3px solid var(--secondcolor);
+
+}
+h4{
+  color: var(--secondcolor);
+  font-family: mainfont;
+}
+.pfont{
+  color: var(--fifthcolor);
+}
+.box {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  background: white;
+  border-radius: 5px;
+}
+.toolbtn {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-toolbtn: 18px;
+  --toolbtn-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--toolbtn-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.5em;
+  font-family: "Arial";
+  transition: background 0.7s;
+}
+
+.toolbtn::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-toolbtn) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.toolbtn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-toolbtn) - 10px);
+}
+
+.toolbtn::after,
+.toolbtn::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbtn-wrapper,
+.text,
+.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0;
+}
+
+.text,
+.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.toolbtn:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+.toolbtn:hover .text {
+  top: -100%;
+}
+
+.toolbtn:hover .icon {
+  top: 0;
+}
+
+.toolbtn:hover:before,
+.toolbtn:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.toolbtn:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-toolbtn) - 20px);
+}
+
+.toolbtn:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-toolbtn));
+}
+.arrow-icon{
+  color: var(--maincolor);
+  font-size: 22px;
+}

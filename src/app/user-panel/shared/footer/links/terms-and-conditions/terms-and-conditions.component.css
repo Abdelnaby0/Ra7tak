@@ -1,0 +1,16 @@
+.accordion-button {
+  color: var(--secondcolor);
+  font-family: mainfont;
+  font-size: 22px;
+  background-color: var(--thirdcolor);
+}
+.accordion-body{
+  color: var(--fifthcolor);
+  font-family: secondcolor;
+  font-size: 18px;
+}
+h1{
+  color: var(--secondcolor);
+  border-bottom: 3px solid var(--secondcolor);
+
+}
