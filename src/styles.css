@@ -170,6 +170,7 @@ body{
   animation-iteration-count: 1;
   animation-duration: 1.3s;
   animation-timing-function: ease-out;
+  opacity: 1 !important;
 }
 
 @keyframes transf-right {
@@ -203,7 +204,6 @@ body{
 
   100% {transform: translateY(0);
     transform: rotateY(0deg);
-
     opacity: 1;
   }
 }

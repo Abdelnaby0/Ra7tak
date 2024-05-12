@@ -13,6 +13,9 @@ h1{
 .trans{
   opacity: 0;
 }
+.trans3{
+  opacity: 0;
+}
 .w-75{
   width: 75% !important;
 }

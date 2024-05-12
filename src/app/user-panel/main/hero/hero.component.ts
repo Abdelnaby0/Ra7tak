@@ -10,10 +10,12 @@ export class HeroComponent {
 
      let trans=document.querySelector('.trans');
      let trans2=document.querySelector('.trans2');
+     let trans3=document.querySelector('.trans3');
      window.addEventListener("scroll", ()=>{
        let now = window.scrollY;
        if(now > 900){
          trans?.classList.add('trans-right')
+         trans3?.classList.add('trans-rotate')
        }
 
        if(now > 300){
